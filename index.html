@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memory Booster — Color Sequence Game</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stage">
+
+  <header class="head">
+    <p class="eyebrow">memory booster</p>
+    <h1>Watch the sequence.<br>Play it <span>back</span>.</h1>
+  </header>
+
+  <div class="board-wrap">
+    <svg id="board" viewBox="0 0 300 300" aria-label="Color sequence game board">
+      <path id="wedge-0" class="wedge" d="M150,150 L150,10 A140,140 0 0,1 290,150 Z" data-color="0" tabindex="0" role="button" aria-label="Red pad"></path>
+      <path id="wedge-1" class="wedge" d="M150,150 L290,150 A140,140 0 0,1 150,290 Z" data-color="1" tabindex="0" role="button" aria-label="Gold pad"></path>
+      <path id="wedge-2" class="wedge" d="M150,150 L150,290 A140,140 0 0,1 10,150 Z" data-color="2" tabindex="0" role="button" aria-label="Green pad"></path>
+      <path id="wedge-3" class="wedge" d="M150,150 L10,150 A140,140 0 0,1 150,10 Z" data-color="3" tabindex="0" role="button" aria-label="Blue pad"></path>
+      <circle cx="150" cy="150" r="140" fill="none" stroke="#302f3b" stroke-width="2"></circle>
+    </svg>
+    <div class="hub">
+      <div class="score" id="score">0</div>
+      <div class="status" id="status">tap start</div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="row">
+      <div class="stat">
+        <span class="label">best run</span>
+        <span class="value" id="best">0</span>
+      </div>
+      <div class="stat" style="align-items:flex-end;">
+        <span class="label">difficulty</span>
+        <div class="difficulty" id="difficulty">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+      </div>
+    </div>
+    <button class="primary" id="startBtn">Start game</button>
+    <p class="hint" id="hint">Each round adds one more step. The pace quickens as your streak grows — stay locked in.</p>
+  </div>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
