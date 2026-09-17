@@ -2,7 +2,7 @@
 
 A web-based color-sequence memory game built to sharpen cognitive skills through adaptive difficulty. Watch the sequence light up, then play it back — each round adds one more step, and the pace quickens as your streak grows.
 
-**Live demo:** https://claude.ai/artifact/CiZjiapE27MSNP39KKq4Bj
+**Live demo:** https://memoryboostergame.netlify.app
 
 ## Features
 
